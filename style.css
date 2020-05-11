@@ -1,6 +1,7 @@
 * {
   font-family: 'Noto Sans', sans-serif;
   font-size: 16px;
+  box-sizing:border-box;
 }
 
 body {
@@ -103,16 +104,16 @@ nav {
 
 .plan {
   border: 2px solid #202020;
-  box-sizing: border-box; 
-  width: calc((min(900px, 100%) - 2 * 20px)/3);
+  width: calc((min(890px, 100%) - 2 * 20px)/3);
   margin-top: 20px;
   font-size: 5rem;
 }
 
 @media (max-width: 800px) {
   .plan {
-    max-width: 400px;
     width: 100%;
+    max-width: 300px;
+    margin: 15px auto;
   }
 }
 
@@ -148,4 +149,17 @@ nav {
 
 footer {
   background-color: #d3d3d3;
+  padding: 20px;
+}
+
+footer > span {
+  font-size: 0.8rem;
+  display: flex;
+  justify-content: flex-end;
+}
+
+.footer-nav {
+  display: flex;
+  justify-content: flex-end;
+  margin-bottom: 5px;
 }
