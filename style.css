@@ -5,8 +5,7 @@
 }
 
 body {
-  margin: 8px;
-
+  margin: 0;
 }
 
 h2 {
@@ -26,10 +25,10 @@ header {
 }
 
 .container {
-  padding-top: 50px;
+  padding: 50px 20px 0;
   text-align: center;
-  margin: 0 auto;
   max-width: 900px;
+  margin: 0 auto;
 }
 
 hero {
@@ -100,11 +99,12 @@ nav {
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
+  margin-bottom: 30px;
 }
 
 .plan {
   border: 2px solid #202020;
-  width: calc((min(890px, 100%) - 2 * 20px)/3);
+  width: calc((min(900px, 100%) - 2 * 20px)/3);
   margin-top: 20px;
   font-size: 5rem;
 }
@@ -131,7 +131,6 @@ nav {
   }
 }
 
-
 .pricing-button {
   font-size: 1.2rem;
   border: 0;
@@ -145,6 +144,45 @@ nav {
   .pricing-button {
     font-size: 0.8rem;
   }
+}
+
+#howItWorks {
+  margin-bottom: 20px;
+}
+
+#features {
+  margin-bottom: 40px;
+}
+
+.feature-grid {
+  display: flex;
+  margin-bottom: 15px;
+}
+
+.feature-description {
+  display: flex;
+  flex-direction: column;
+  flex-grow: 1;
+  justify-content: center;
+  align-items: flex-start;
+  text-align: left;
+  margin-left: 20px;
+}
+
+.feature-description > h2 {
+  margin: 0;
+  padding: 0;
+}
+
+.icon {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: orange;
+}
+
+.icon > i {
+  width: 150px;
 }
 
 footer {
